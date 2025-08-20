@@ -1,4 +1,5 @@
-# GoonFinder, the ultimate one stop search for all your media desires for artists and enthusiasts 
+# GoonFinder  🔍
+**the ultimate one stop search for all your media desires for artists and enthusiasts**
 
 ## what is the "GoonFinder?"
 
