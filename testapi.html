@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>test api</title>
+</head>
+<body>
+    <button onclick="fetchDanbooru(apiUrl)">test</button>
+    <!--<button onclick="testthing()">console</button>-->
+    <script>
+        const apiUrl = 'https://testbooru.donmai.us/posts.json';
+
+        function fetchDanbooru(input)
+        {
+            fetch(apiUrl)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log(data);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+        //function testthing()
+        //{
+        //    console.log("testing")
+        //}
+    </script>
+</body>
+</html>
